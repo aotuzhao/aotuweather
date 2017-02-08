@@ -17,7 +17,6 @@ import com.qq.e.ads.splash.SplashADListener;
 import java.util.ArrayList;
 import java.util.List;
 
-//接入广告
 public class SplashActivity extends AppCompatActivity {
     private RelativeLayout container;
     boolean canJump;
@@ -106,7 +105,7 @@ public class SplashActivity extends AppCompatActivity {
     }
 
     @Override
-    public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
+    public void onRequestPermissionsResult(int requestCode, String[] permissions, int[] grantResults) {
         switch (requestCode) {
             case 1:
                 if (grantResults.length > 0) {
